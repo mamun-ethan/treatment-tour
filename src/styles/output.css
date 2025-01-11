@@ -658,6 +658,38 @@ video {
   top: 72px;
 }
 
+.-bottom-\[4rem\] {
+  bottom: -4rem;
+}
+
+.-bottom-\[6rem\] {
+  bottom: -6rem;
+}
+
+.-bottom-\[5\.5\] {
+  bottom: -5.5;
+}
+
+.-bottom-\[5\.5rem\] {
+  bottom: -5.5rem;
+}
+
+.top-\[30\%\] {
+  top: 30%;
+}
+
+.top-\[35\%\] {
+  top: 35%;
+}
+
+.top-\[40\%\] {
+  top: 40%;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
 .z-\[1\] {
   z-index: 1;
 }
@@ -747,6 +779,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[600px\] {
+  height: 600px;
 }
 
 .max-h-full {
@@ -1380,6 +1416,18 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:top-\[60\%\] {
+    top: 60%;
+  }
+
+  .md\:top-\[80\%\] {
+    top: 80%;
+  }
+
+  .md\:top-\[10rem\] {
+    top: 10rem;
+  }
+
   .md\:mt-\[2rem\] {
     margin-top: 2rem;
   }
@@ -1418,6 +1466,22 @@ video {
 @media (min-width: 1024px) {
   .lg\:absolute {
     position: absolute;
+  }
+
+  .lg\:top-\[40\%\] {
+    top: 40%;
+  }
+
+  .lg\:top-\[20\%\] {
+    top: 20%;
+  }
+
+  .lg\:top-\[25\%\] {
+    top: 25%;
+  }
+
+  .lg\:top-\[15\%\] {
+    top: 15%;
   }
 
   .lg\:mb-3 {
