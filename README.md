@@ -23,13 +23,13 @@ Follow these steps to get started with this project starter:
 1. Clone the repository:
 
    ```bash
-   git clone <https://github.com/mamun-ethan/pipilika-web-agency.git>
+   git clone <https://github.com/mamun-ethan/treatmenttour.git>
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd pipilika-web-agency
+   cd treatment-tour
    ```
 
 3. Install dependencies:
