@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./src//styles/output.css" rel="stylesheet" />
+    <title>Treatmenttour</title>
+  </head>
+  <body class="bg-gray-100">
+    <header class="">
+      <div class="bg-white">
+        <div class="container mx-auto px-2">
+          <div class="w-full flex justify-between items-center px-2 sm:px-0">
+            <a class="flex items-center" href="/"
+              ><img
+                alt="Logo"
+                width="80"
+                height="30"
+                src="./src//assets/images/logo.webp"
+                style="color: transparent"
+              />
+              <p
+                class="font-bold text-sm sm:text-xl uppercase tracking-wide hidden md:block"
+              >
+                <span class="block leading-5 text-blue-500">treatment</span
+                ><span class="block leading-5 text-primary">tour</span>
+              </p></a
+            >
+            <div class="flex gap-10">
+              <div class="flex items-center gap-4 sm:gap-6">
+                <a
+                  class="text-sm bg-pink-700 text-white px-4 py-2 rounded-md font-bold hover:bg-black-700 duration-300"
+                  href="/partner"
+                  >Become Our Partner</a
+                ><a
+                  class="text-sm bg-pink-700 text-white px-4 py-2 rounded-md font-bold hover:bg-black-700 duration-300"
+                  href="#"
+                  >Booking</a
+                ><button
+                  class="text-sm relative hover:bg-pink-700 bg-slate-100 border border-solid border-slate-300 p-2 rounded-full capitalize font-bold fill-primary duration-500 hover:bg-primary hover:fill-slate-100 group"
+                >
+                  <span class="text-sm w-5 h-5 block"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                      ></path></svg></span
+                  ><span
+                    class="opacity-0 duration-500 group-hover:opacity-100 absolute text-nowrap bg-primary text-pink-700 px-2 rounded-full font-medium top-10 -left-4"
+                    >find now</span
+                  ></button
+                ><button
+                  class="text-sm hover:bg-pink-700 bg-slate-100 border border-solid border-slate-300 p-2 rounded-full capitalize font-bold text-slate-600 fill-slate-600 duration-500 hover:bg-primary hover:fill-slate-100 relative group"
+                >
+                  <span class="text-sm w-5 h-5 block"
+                    ><svg
+                      width="100%"
+                      height="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+                      ></path></svg></span
+                  ><span
+                    class="opacity-0 duration-500 group-hover:opacity-100 absolute text-nowrap bg-primary text-pink-700 px-2 rounded-full font-medium top-10 -left-4"
+                    >User Profile</span
+                  ></button
+                ><a
+                  target="_blank"
+                  class="flex gap-3 items-center justify-center bg-black border border-solid border-slate-300 px-3 py-3 sm:py-2 sm:rounded-md uppercase font-bold text-slate-100 text-sm fill-slate-100 duration-500 hover:bg-primary rounded-full"
+                  href="https://app.medservebd.com/"
+                  ><i class="w-4 h-4"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      width="100%"
+                      height="100%"
+                    >
+                      <path
+                        d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+                      ></path></svg></i
+                  ><span class="hidden sm:block">Login</span></a
+                ><button
+                  id="menu-btn"
+                  class="block lg:hidden size-12 rounded-lg p-2 sm:size-10 text-white fill-white bg-pink-700"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <rect
+                      x="48"
+                      y="48"
+                      width="176"
+                      height="176"
+                      rx="20"
+                      ry="20"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                    ></rect>
+                    <rect
+                      x="288"
+                      y="48"
+                      width="176"
+                      height="176"
+                      rx="20"
+                      ry="20"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                    ></rect>
+                    <rect
+                      x="48"
+                      y="288"
+                      width="176"
+                      height="176"
+                      rx="20"
+                      ry="20"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                    ></rect>
+                    <rect
+                      x="288"
+                      y="288"
+                      width="176"
+                      height="176"
+                      rx="20"
+                      ry="20"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                    ></rect>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="w-full py-4 md:py-0 text-lg text-gray-700 bg-white">
+        <!-- nav -->
+        <div
+          id="menu"
+          class="bg-pink-700 hidden md:block text-base font-semibold w-full lg:w-auto"
+        >
+          <div class="w-full py-0">
+            <ul
+              class="flex flex-col md:flex-row justify-center lg:gap-8 2xl:gap-12 items-center"
+            >
+              <li class="group relative text-gray-200">
+                <button class="px-4 py-2 rounded">
+                  <a class="flex items-center justify-center" href="/"
+                    ><span>Home</span></a
+                  >
+                </button>
+              </li>
+              <li class="group relative text-gray-200">
+                <button class="px-4 py-2 rounded">
+                  <a class="flex items-center justify-center" href="/"
+                    ><span>Doctors</span></a
+                  >
+                </button>
+                <ul
+                  class="absolute top-11 left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                >
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap"
+                        >Cardiology and Cardiac Surgery</span
+                      ><i
+                        class="block size-3 duration-500 group-[.children:hover]:rotate-90"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path
+                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                          ></path></svg></i
+                    ></a>
+                    <div
+                      class="hidden group-[.children:hover]:block lg:absolute"
+                      style="left: 100%; top: 0px"
+                    >
+                      <ul
+                        class="lg:absolute top-[72px] left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                      >
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">India</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">Turkey</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">UAE</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Thailand</span
+                            ></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Malaysia</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Dental Treatment</span
+                      ><i
+                        class="block size-3 duration-500 group-[.children:hover]:rotate-90"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path
+                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                          ></path></svg></i
+                    ></a>
+                    <div
+                      class="hidden group-[.children:hover]:block lg:absolute"
+                      style="left: 100%; top: 0px"
+                    >
+                      <ul
+                        class="lg:absolute top-[72px] left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                      >
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">India</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">Turkey</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">UAE</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Thailand</span
+                            ></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Malaysia</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Dermatology</span
+                      ><i
+                        class="block size-3 duration-500 group-[.children:hover]:rotate-90"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path
+                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                          ></path></svg></i
+                    ></a>
+                    <div
+                      class="hidden group-[.children:hover]:block lg:absolute"
+                      style="left: 100%; top: 0px"
+                    >
+                      <ul
+                        class="lg:absolute top-[72px] left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                      >
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">India</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">Turkey</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">UAE</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Thailand</span
+                            ></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Malaysia</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Endocrinology</span
+                      ><i
+                        class="block size-3 duration-500 group-[.children:hover]:rotate-90"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path
+                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                          ></path></svg></i
+                    ></a>
+                    <div
+                      class="hidden group-[.children:hover]:block lg:absolute"
+                      style="left: 100%; top: 0px"
+                    >
+                      <ul
+                        class="lg:absolute top-[72px] left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                      >
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">India</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">Turkey</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">UAE</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Thailand</span
+                            ></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Malaysia</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">ENT Surgery</span
+                      ><i
+                        class="block size-3 duration-500 group-[.children:hover]:rotate-90"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path
+                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                          ></path></svg></i
+                    ></a>
+                    <div
+                      class="hidden group-[.children:hover]:block lg:absolute"
+                      style="left: 100%; top: 0px"
+                    >
+                      <ul
+                        class="lg:absolute top-[72px] left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                      >
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">India</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">Turkey</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">UAE</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Thailand</span
+                            ></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Malaysia</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Gastroenterology</span
+                      ><i
+                        class="block size-3 duration-500 group-[.children:hover]:rotate-90"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path
+                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                          ></path></svg></i
+                    ></a>
+                    <div
+                      class="hidden group-[.children:hover]:block lg:absolute"
+                      style="left: 100%; top: 0px"
+                    >
+                      <ul
+                        class="lg:absolute top-[72px] left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                      >
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">India</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">Turkey</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">UAE</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Thailand</span
+                            ></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Malaysia</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">General Surgery</span
+                      ><i
+                        class="block size-3 duration-500 group-[.children:hover]:rotate-90"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path
+                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                          ></path></svg></i
+                    ></a>
+                    <div
+                      class="hidden group-[.children:hover]:block lg:absolute"
+                      style="left: 100%; top: 0px"
+                    >
+                      <ul
+                        class="lg:absolute top-[72px] left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                      >
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">India</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">Turkey</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">UAE</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Thailand</span
+                            ></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Malaysia</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Gynecology</span
+                      ><i
+                        class="block size-3 duration-500 group-[.children:hover]:rotate-90"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path
+                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                          ></path></svg></i
+                    ></a>
+                    <div
+                      class="hidden group-[.children:hover]:block lg:absolute"
+                      style="left: 100%; top: 0px"
+                    >
+                      <ul
+                        class="lg:absolute top-[72px] left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                      >
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">India</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">Turkey</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">UAE</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Thailand</span
+                            ></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Malaysia</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Hematology</span
+                      ><i
+                        class="block size-3 duration-500 group-[.children:hover]:rotate-90"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path
+                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                          ></path></svg></i
+                    ></a>
+                    <div
+                      class="hidden group-[.children:hover]:block lg:absolute"
+                      style="left: 100%; top: 0px"
+                    >
+                      <ul
+                        class="lg:absolute top-[72px] left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                      >
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">India</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">Turkey</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">UAE</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Thailand</span
+                            ></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Malaysia</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap"
+                        >Ani Aging Check Up Package</span
+                      ><i
+                        class="block size-3 duration-500 group-[.children:hover]:rotate-90"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path
+                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                          ></path></svg></i
+                    ></a>
+                    <div
+                      class="hidden group-[.children:hover]:block lg:absolute"
+                      style="left: 100%; top: 0px"
+                    >
+                      <ul
+                        class="lg:absolute top-[72px] left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                      >
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">India</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">Turkey</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap">UAE</span></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Thailand</span
+                            ></a
+                          >
+                        </li>
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Malaysia</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="group relative text-gray-200">
+                <button class="px-4 py-2 rounded">
+                  <a class="flex items-center justify-center" href="/"
+                    ><span>Hospital</span></a
+                  >
+                </button>
+                <ul
+                  class="lg:absolute top-11 left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                >
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">India</span></a
+                    >
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Turkey</span></a
+                    >
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">UAE</span></a
+                    >
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Thailand</span></a
+                    >
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Malaysia</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="group relative text-gray-200">
+                <button class="px-4 py-2 rounded">
+                  <a class="flex items-center justify-center" href="/"
+                    ><span>Medical Treatment</span></a
+                  >
+                </button>
+                <ul
+                  class="lg:absolute top-11 left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                >
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap"
+                        >Cardiology and Cardiac Surgery</span
+                      ><i
+                        class="block size-3 duration-500 group-[.children:hover]:rotate-90"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path
+                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                          ></path></svg></i
+                    ></a>
+                    <div
+                      class="hidden group-[.children:hover]:block lg:absolute"
+                      style="left: 100%; top: 0px"
+                    >
+                      <ul
+                        class="lg:absolute top-[72px] left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                      >
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Heart Bypass Surgery (CABG)</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Dental Treatment</span
+                      ><i
+                        class="block size-3 duration-500 group-[.children:hover]:rotate-90"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path
+                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                          ></path></svg></i
+                    ></a>
+                    <div
+                      class="hidden group-[.children:hover]:block lg:absolute"
+                      style="left: 100%; top: 0px"
+                    >
+                      <ul
+                        class="lg:absolute top-[72px] left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                      >
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Teeth Whitening</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Dermatology</span></a
+                    >
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Endocrinology</span></a
+                    >
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">ENT Surgery</span></a
+                    >
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap"
+                        >Gastroenterology</span
+                      ></a
+                    >
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Gynecology</span></a
+                    >
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Hematology</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="group relative text-gray-200">
+                <button class="px-4 py-2 rounded">
+                  <a class="flex items-center justify-center" href="/"
+                    ><span>Cosmetic Treatment</span></a
+                  >
+                </button>
+                <ul
+                  class="lg:absolute top-11 left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                >
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap"
+                        >General Surgery</span
+                      ></a
+                    >
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap"
+                        >Ani Aging Check Up Package</span
+                      ><i
+                        class="block size-3 duration-500 group-[.children:hover]:rotate-90"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path
+                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                          ></path></svg></i
+                    ></a>
+                    <div
+                      class="hidden group-[.children:hover]:block lg:absolute"
+                      style="left: 100%; top: 0px"
+                    >
+                      <ul
+                        class="lg:absolute top-[72px] left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                      >
+                        <li
+                          class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                        >
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="doctors"
+                            ><span class="leading-5 text-wrap"
+                              >Dermal Fillers</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="group relative text-gray-200">
+                <button class="px-4 py-2 rounded">
+                  <a class="flex items-center justify-center" href="/"
+                    ><span>More</span></a
+                  >
+                </button>
+                <ul
+                  class="lg:absolute top-11 left-0 bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] group-[.active]:py-4 lg:group-hover:py-4 z-[1]"
+                >
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Free Quote</span></a
+                    >
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap"
+                        >Treatment Packages</span
+                      ></a
+                    >
+                  </li>
+                  <li
+                    class="px-4 py-1 lg:w-64 hidden lg:group-hover:!block group-[.active]:block lg:group-[.active]:hidden group children relative"
+                  >
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-slate-50 text-slate-500 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="doctors"
+                      ><span class="leading-5 text-wrap">Career</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="group relative text-gray-200">
+                <button class="px-4 py-2 rounded">
+                  <a class="flex items-center justify-center" href="/"
+                    ><span>Contact Us</span></a
+                  >
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- hero -->
+      <div>
+        <div class="container mx-auto px-5">
+          <div
+            class="h-screen rounded-bl-[100px] flex flex-col md:flex-row items-center gap-5 bg-blue-500 relative"
+          >
+            <div class="text w-full md:w-[60%] pt-6 px-5 text-[#fff]">
+              <h1 class="text-2xl md:text-4xl font-bold">
+                Affordable Excellence in Medical Treatments and Surgical
+                Care&nbsp; <br class="md:mt-[2rem]" />&nbsp;Worldwide
+              </h1>
+              <p class="uppercase md:mt-[2rem]">with unmatch personal care</p>
+              <p class="md:mt-[2rem]">
+                Experience Personalized Care At Every Stage Of Your Journey,
+                <br class="mt-[1rem]" />Ensuring Tailored Treatment And Support
+                For Your Unique <br class="mt-[1rem]" />Needs And Preferences.
+              </p>
+            </div>
+            <div class="md:flex flex-col form w-full md:w-[40%]">
+              <h1 class="text-2xl py-2 text-center font-bold text-[#fff]">
+                Get Free Information
+              </h1>
+              <div
+                class="Table-body w-[90%] mx-auto rounded-lg bg-gradient-to-b from-blue-100 to-blue-300"
+              >
+                <div
+                  class="table-body w-[90%] mx-auto py-4 flex flex-col justify-center gap-3"
+                >
+                  <input
+                    placeholder="Full Name"
+                    class="p-2 rounded-md"
+                    type="text"
+                  /><input
+                    placeholder="Select country"
+                    class="p-2 rounded-md"
+                    type="text"
+                  />
+                  <div class="flex gap-2 flex-row">
+                    <input
+                      placeholder="Email"
+                      class="p-2 w-1/2 rounded-md"
+                      type="text"
+                    /><input
+                      placeholder="Phone"
+                      class="p-2 w-1/2 rounded-md"
+                      type="text"
+                    />
+                  </div>
+                  <textarea
+                    name=""
+                    class="p-2 rounded-lg"
+                    placeholder="Write down your concern"
+                    id=""
+                  ></textarea>
+                  <div class="check-box flex items-center justify-center gap-2">
+                    <input
+                      id=""
+                      placeholder="Want to send video discription ?"
+                      type="checkbox"
+                      class="cursor-pointer"
+                      name=""
+                    />
+                    <p>Want to send video discription ?</p>
+                  </div>
+                  <button
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold p-2 rounded-md w-full mx-auto"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden md:block doctor-pmg absolute w-[25rem] -bottom-[7.38rem] left-[35%] h-[25rem]"
+          >
+            <img
+              width="411"
+              height="411"
+              class="w-full h-full"
+              src="./src/assets/images/doctor.webp"
+            />
+          </div>
+          <div class="icons hidden md:flex">
+            <div class="absolute text-blue-300 top-[60%] right-[33rem]">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                height="5rem"
+                width="5rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M174.688 28.063v71.625h-80.75v81.374H22.313v160.094h71.625v80.72h80.75v71.655H334.75v-71.655h81.375v-80.72h71.656V181.063h-71.655V99.688H334.75V28.064H174.688zm18.687 18.687h122.688v153H469.093v122.72H316.062V474.843H193.375V322.47H41V199.75h152.375v-153z"
+                ></path>
+              </svg>
+            </div>
+            <div class="absolute w-[3rem] text-blue-300 top-[65%] left-[30rem]">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                height="5rem"
+                width="5rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1V192c0 53 43 96 96 96s96-43 96-96V71.1l-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1V192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112V265.3c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V336c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192V71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="bottom h-[6rem] bg-blue-500">
+            <div class="right h-[6rem] bg-gray-100 rounded-tr-[100px]"></div>
+          </div>
+        </div>
+      </div>
+      <!-- service -->
+      <div>
+        <div class="container mx-auto px-5 pb-5 lg:py-10">
+          <div class="w-full flex flex-col items-center justify-center">
+            <h1
+              class="mb-1 lg:mb-3 text-xl lg:text-2xl xl:text-3xl font-medium text-center"
+            >
+              Why choose Our<span class="px-1 text-pink-700 font-bold"
+                >Treatment Tour</span
+              >
+            </h1>
+            <div
+              class="max-w-4xl text-center text-sm lg:text-lg leading-4 lg:leading-5 font-suse"
+            >
+              From business cards to banners, HelloPrint offers a wide range of
+              online printing &amp;amp; personalized print products to enhance
+              your brand and marketing efforts, catering to all your
+              professional and personal printing needs.
+            </div>
+          </div>
+          <div class="flex flex-wrap w-full gap-6 py-10 justify-center">
+            <div
+              class="w-full lg:w-[48%] xl:w-[31%] p-6 border border-solid border-slate-300 bg-white relative rounded-xl"
+            >
+              <div>
+                <h2 class="text-xl font-medium">
+                  Sign &amp; Paint VIP Program
+                </h2>
+                <p class="text-justify leading-6 py-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores dignissimos, iste ipsum fugit nulla soluta eveniet
+                  magni, repudiandae.
+                </p>
+                <a class="mt-5 block rounded-md" href="#"
+                  ><button
+                    class="flex gap-3 bg-pink-700 text-white px-5 py-2 font-bold capitalize tracking-wide duration-300 hover:tracking-wider rounded hover:bg-black"
+                  >
+                    <span>learn more</span
+                    ><span
+                      ><i class="fa-solid fa-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+              <div
+                class="absolute bottom-0 text-7xl pr-6 pb-6 text-slate-300 right-0"
+              >
+                <span><i class="fa-solid fa-heart-circle-bolt"></i></span>
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-[48%] xl:w-[31%] p-6 border border-solid border-slate-300 bg-white relative rounded-xl"
+            >
+              <div>
+                <h2 class="text-xl font-medium">
+                  Quick &amp; Super fast delivery
+                </h2>
+                <p class="text-justify leading-6 py-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores dignissimos, iste ipsum fugit nulla soluta eveniet
+                  magni, repudiandae.
+                </p>
+                <a class="mt-5 block rounded-md" href="#"
+                  ><button
+                    class="flex gap-3 bg-pink-700 text-white px-5 py-2 font-bold capitalize tracking-wide duration-300 hover:tracking-wider rounded hover:bg-black"
+                  >
+                    <span>Explore now</span
+                    ><span
+                      ><i class="fa-brands fa-canadian-maple-leaf"></i
+                    ></span></button
+                ></a>
+              </div>
+              <div
+                class="absolute bottom-0 text-7xl pr-6 pb-6 text-slate-300 right-0"
+              >
+                <span><i class="fa-solid fa-truck-moving"></i></span>
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-[48%] xl:w-[31%] p-6 border border-solid border-slate-300 bg-white relative rounded-xl"
+            >
+              <div>
+                <h2 class="text-xl font-medium">Awareness &amp; Support</h2>
+                <p class="text-justify leading-6 py-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores dignissimos, iste ipsum fugit nulla soluta eveniet
+                  magni, repudiandae.
+                </p>
+                <a class="mt-5 block rounded-md" href="#"
+                  ><button
+                    class="flex gap-3 bg-pink-700 text-white px-5 py-2 font-bold capitalize tracking-wide duration-300 hover:tracking-wider rounded hover:bg-black"
+                  >
+                    <span>support for help</span
+                    ><span><i class="fa-solid fa-hand"></i></span></button
+                ></a>
+              </div>
+              <div
+                class="absolute bottom-0 text-7xl pr-6 pb-6 text-slate-300 right-0"
+              >
+                <span><i class="fa-solid fa-hand-holding-hand"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  Carousel  -->
+      <div class="relative w-full glide-01">
+        <div class="container mx-auto px-5">
+          <div class="mb-8">
+            <h2 class="font-bold text-xl text-pink-700">
+              <span class="tracking-[-4px] pr-4">-------</span
+              ><span class="capitalize">Brands</span>
+            </h2>
+            <h1 class="text-2xl font-normal mt-2">Our Latest Case Studies</h1>
+          </div>
+        </div>
+        <!-- Slides -->
+        <div class="overflow-hidden cursor-pointer" data-glide-el="track">
+          <ul
+            class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3] [touch-action: pan-Y] [will-change: transform]"
+          >
+            <li>
+              <img
+                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-01.jpg"
+                class="w-full max-w-full max-h-full m-auto"
+              />
+            </li>
+            <li>
+              <img
+                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-02.jpg"
+                class="w-full max-w-full max-h-full m-auto"
+              />
+            </li>
+            <li>
+              <img
+                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-03.jpg"
+                class="w-full max-w-full max-h-full m-auto"
+              />
+            </li>
+            <li>
+              <img
+                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-04.jpg"
+                class="w-full max-w-full max-h-full m-auto"
+              />
+            </li>
+            <li>
+              <img
+                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-05.jpg"
+                class="w-full max-w-full max-h-full m-auto"
+              />
+            </li>
+          </ul>
+        </div>
+        <!-- Controls -->
+        <div
+          class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-2/3"
+          data-glide-el="controls"
+        >
+          <button
+            class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-white font-semibold hover:text-slate-900 focus-visible:outline-none bg-pink-700"
+            data-glide-dir="<"
+            aria-label="prev slide"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <title>prev slide</title>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+              />
+            </svg>
+          </button>
+          <button
+            class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-white font-semibold hover:text-slate-900 focus-visible:outline-none bg-pink-700"
+            data-glide-dir=">"
+            aria-label="next slide"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <title>next slide</title>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="mx-auto py-5 bg-gray-200 px-5">
+        <div class="flex flex-col justify-between items-center md:flex-row">
+          <div>
+            <p class="font-normal text-slate-500 text-base">
+              @copyright
+              <span class="font-semibold i italic text-pink-700">2025 </span>
+              all right reverse by
+              <a
+                href="#"
+                class="font-semibold text-slate-800 hover:text-pink-700 hover:border-b-2 border-pink-700 hover:tracking-wider transition-all duration-500 cursor-pointer"
+                >Treatmenttour</a
+              >
+            </p>
+          </div>
+          <div>
+            <ul class="flex justify-between text-base items-end gap-2">
+              <li>
+                <a
+                  href="#"
+                  class="py-2.5 px-4 rounded-full bg-white border hover:bg-pink-700 hover:text-white border-pink-700"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="py-2.5 px-3.5 rounded-full bg-white border hover:bg-pink-700 hover:text-white border-pink-700"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="py-2.5 px-3.5 rounded-full bg-white border hover:bg-pink-700 hover:text-white border-pink-700"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="py-2.5 px-3.5 rounded-full bg-white border hover:bg-pink-700 hover:text-white border-pink-700"
+                >
+                  <i class="fa-brands fa-reddit-alien"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+
+    <script>
+      var glide01 = new Glide(".glide-01", {
+        type: "carousel",
+        focusAt: "center",
+        perView: 4,
+        autoplay: 2000,
+        animationDuration: 700,
+        gap: 10,
+        classes: {
+          activeNav: "[&>*]:bg-slate-700",
+        },
+        breakpoints: {
+          1024: {
+            perView: 2,
+          },
+          640: {
+            perView: 1,
+          },
+        },
+      });
+
+      glide01.mount();
+
+      const button = document.querySelector("#menu-btn");
+      const menu = document.querySelector("#menu");
+
+      button.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
