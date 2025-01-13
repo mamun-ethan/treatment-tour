@@ -3,6 +3,14 @@
 View the live project here:
 [🔴 Live Demo](https://mamun-ethan.github.io/treatment-tour/)
 
+## pages
+
+- [Home](https://mamun-ethan.github.io/treatment-tour/index.html)
+- [Doctors](https://mamun-ethan.github.io/treatment-tour/doctors.html)
+  - [About Doctor](https://mamun-ethan.github.io/treatment-tour/doctors.html)
+- [Hospitals](https://mamun-ethan.github.io/treatment-tour/about-doctor.html)
+  - [About Hospital](https://mamun-ethan.github.io/treatment-tour/about-hospital.html)
+
 ## ✨ Features
 
 - **🌀 Tailwind CSS**: Pre-installed and ready to use.
