@@ -7,9 +7,10 @@ View the live project here:
 
 - [Home](https://mamun-ethan.github.io/treatment-tour/index.html)
 - [Doctors](https://mamun-ethan.github.io/treatment-tour/doctors.html)
-  - [About Doctor](https://mamun-ethan.github.io/treatment-tour/doctors.html)
-- [Hospitals](https://mamun-ethan.github.io/treatment-tour/about-doctor.html)
+  - [About Doctor](https://mamun-ethan.github.io/treatment-tour/about-doctors.html)
+- [Hospitals](https://mamun-ethan.github.io/treatment-tour/hospitals.html)
   - [About Hospital](https://mamun-ethan.github.io/treatment-tour/about-hospital.html)
+- [Treatments](https://mamun-ethan.github.io/treatment-tour/treatments.html)
 
 ## ✨ Features
 
