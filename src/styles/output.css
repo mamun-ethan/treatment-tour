@@ -876,6 +876,22 @@ video {
   height: 1px;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[350px\] {
+  height: 350px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -1218,6 +1234,10 @@ video {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\/src\/assets\/images\/treatment-1\.png\'\)\] {
+  background-image: url('./src/assets/images/treatment-1.png');
+}
+
 .from-blue-100 {
   --tw-gradient-from: #dbeafe var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(219 234 254 / 0) var(--tw-gradient-to-position);
@@ -1226,6 +1246,18 @@ video {
 
 .to-blue-300 {
   --tw-gradient-to: #93c5fd var(--tw-gradient-to-position);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .fill-green-500 {
@@ -1955,8 +1987,16 @@ video {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:gap-2 {
+    gap: 0.5rem;
   }
 
   .md\:px-12 {
