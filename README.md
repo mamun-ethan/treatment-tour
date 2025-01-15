@@ -12,6 +12,7 @@ View the live project here:
   - [About Hospital](https://mamun-ethan.github.io/treatment-tour/about-hospital.html)
 - [Treatments](https://mamun-ethan.github.io/treatment-tour/treatments.html)
 - [Appointment](https://mamun-ethan.github.io/treatment-tour/appointment.html)
+- [Facility](https://mamun-ethan.github.io/treatment-tour/facility.html)
 
 ## ✨ Features
 
