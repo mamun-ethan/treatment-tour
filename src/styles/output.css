@@ -735,10 +735,6 @@ video {
   margin-bottom: 0.25rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -787,16 +783,8 @@ video {
   margin-top: 0.75rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .mt-8 {
@@ -889,10 +877,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-px {
-  height: 1px;
 }
 
 .max-h-full {
@@ -1040,14 +1024,6 @@ video {
   gap: 1.5rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-y-10 {
-  row-gap: 2.5rem;
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1076,10 +1052,6 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
 }
 
 .rounded-full {
@@ -1125,10 +1097,6 @@ video {
 
 .border-b-2 {
   border-bottom-width: 2px;
-}
-
-.border-t {
-  border-top-width: 1px;
 }
 
 .border-solid {
@@ -1180,10 +1148,6 @@ video {
   border-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
 }
 
-.border-slate-300\/70 {
-  border-color: rgb(203 213 225 / 0.7);
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
@@ -1197,11 +1161,6 @@ video {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
 
 .bg-green-500 {
@@ -1314,10 +1273,6 @@ video {
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .p-4 {
@@ -1711,12 +1666,6 @@ video {
   opacity: 0;
 }
 
-.shadow-\[0px_2px_4px_0px_rgba\(0\2c 0\2c 0\2c 0\.05\)\] {
-  --tw-shadow: 0px 2px 4px 0px rgba(0,0,0,0.05);
-  --tw-shadow-colored: 0px 2px 4px 0px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-\[0px_2px_4px_0px_rgba\(0\2c 0\2c 0\2c 0\.1\)\] {
   --tw-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
   --tw-shadow-colored: 0px 2px 4px 0px var(--tw-shadow-color);
@@ -2012,10 +1961,6 @@ video {
     width: 40%;
   }
 
-  .md\:w-\[47\%\] {
-    width: 47%;
-  }
-
   .md\:w-\[60\%\] {
     width: 60%;
   }
@@ -2165,14 +2110,6 @@ video {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:w-\[23\%\] {
-    width: 23%;
-  }
-
-  .\32xl\:flex-row {
-    flex-direction: row;
-  }
-
   .\32xl\:gap-12 {
     gap: 3rem;
   }
