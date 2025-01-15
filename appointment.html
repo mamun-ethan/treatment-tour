@@ -165,13 +165,11 @@
 
       <nav class="w-full py-4 md:py-0 text-lg text-gray-700 bg-white">
         <!-- nav -->
-        <div
-          id="menu"
-          class="bg-pink-700 hidden md:block text-base font-semibold w-full lg:w-auto"
-        >
-          <div class="w-full py-0">
+        <div class="bg-pink-700 text-base font-semibold w-full lg:w-auto">
+          <!-- desktop nav -->
+          <div class="w-full hidden md:block py-0">
             <ul
-              class="flex flex-col md:flex-row justify-center lg:gap-8 2xl:gap-12 items-center"
+              class="flex flex-row justify-center lg:gap-8 2xl:gap-12 items-center"
             >
               <li class="group relative text-gray-200">
                 <button class="px-4 py-2 rounded">
@@ -1263,6 +1261,237 @@
               </li>
             </ul>
           </div>
+          <!-- mobile menu -->
+          <div id="mobile-menu" class="w-full hidden md:hidden py-0">
+            <ul
+              class="flex flex-col py-5 justify-center gap-4 lg:gap-8 2xl:gap-12 items-center text-start"
+            >
+              <!-- Home item -->
+              <li class="relative text-gray-200">
+                <a class="flex items-center justify-center" href="/">Home</a>
+              </li>
+
+              <!-- Doctor item -->
+              <li class="text-center relative text-gray-200">
+                <a
+                  href="javascript:void(0)"
+                  class="flex items-center justify-center"
+                  onclick="toggleSubmenu('doctor-dropdown')"
+                >
+                  <span>Doctor</span>
+                </a>
+
+                <!-- First dropdown (Doctor) -->
+                <ul class="bg-white rounded-md hidden" id="doctor-dropdown">
+                  <!-- Cardiology item -->
+                  <li class="px-4 py-1 lg:w-64">
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-100 text-cyan-900 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="javascript:void(0)"
+                      onclick="toggleSubmenu('cardiology-dropdown')"
+                    >
+                      <span class="leading-5 text-wrap"
+                        >Cardiology and Cardiac Surgery</span
+                      >
+                      <i class="block size-3 duration-500"></i>
+                    </a>
+
+                    <!-- Nested dropdown (Cardiology) -->
+                    <div class="hidden" id="cardiology-dropdown">
+                      <ul class="my-2">
+                        <li>
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-300 text-pink-800 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="./doctors.html"
+                          >
+                            <span class="leading-5 text-wrap">India</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-300 text-pink-800 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="./doctors.html"
+                          >
+                            <span class="leading-5 text-wrap">USA</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="px-4 py-1 lg:w-64">
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-100 text-cyan-900 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="javascript:void(0)"
+                      onclick="toggleSubmenu('nephrology-dropdown')"
+                    >
+                      <span class="leading-5 text-wrap">nephrology</span>
+                      <i class="block size-3 duration-500"></i>
+                    </a>
+
+                    <!-- Nested dropdown (Cardiology) -->
+                    <div class="hidden" id="nephrology-dropdown">
+                      <ul class="my-2">
+                        <li class="my-2">
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-300 text-pink-800 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="./doctors.html"
+                          >
+                            <span class="leading-5 text-wrap">India</span>
+                          </a>
+                        </li>
+                        <li class="my-2">
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-300 text-pink-800 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="./doctors.html"
+                          >
+                            <span class="leading-5 text-wrap">USA</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="px-4 py-1 lg:w-64">
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-100 text-cyan-900 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="javascript:void(0)"
+                      onclick="toggleSubmenu('cardiology-dropdown')"
+                    >
+                      <span class="leading-5 text-wrap">example</span>
+                      <i class="block size-3 duration-500"></i>
+                    </a>
+
+                    <!-- Nested dropdown (Cardiology) -->
+                    <div class="hidden" id="cardiology-dropdown">
+                      <ul class="my-2">
+                        <li>
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-300 text-pink-800 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="./doctors.html"
+                          >
+                            <span class="leading-5 text-wrap">India</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-300 text-pink-800 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="./doctors.html"
+                          >
+                            <span class="leading-5 text-wrap">USA</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- hospital item -->
+              <li class="text-center relative text-gray-200">
+                <a
+                  href="javascript:void(0)"
+                  class="flex items-center capitalize justify-center"
+                  onclick="toggleSubmenu('hospital-dropdown')"
+                >
+                  <span>hospital</span>
+                </a>
+
+                <!-- Second dropdown (Services) -->
+                <ul
+                  class="bg-white rounded-md hidden my-4"
+                  id="hospital-dropdown"
+                >
+                  <!-- Web Design item -->
+                  <li class="px-4 py-1 lg:w-64">
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-100 text-cyan-900 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="javascript:void(0)"
+                      onclick="toggleSubmenu('india-dropdown')"
+                    >
+                      <span class="leading-5 text-wrap"
+                        >india medical hospital</span
+                      >
+                      <i class="block size-3 duration-500"></i>
+                    </a>
+
+                    <!-- Nested dropdown (Web Design) -->
+                    <div class="hidden" id="india-dropdown">
+                      <ul class="my-2">
+                        <li>
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-300 text-pink-800 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="/services/web-design"
+                          >
+                            <span class="leading-5 text-wrap"
+                              >UI/UX Design</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-300 text-pink-800 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="/services/web-design"
+                          >
+                            <span class="leading-5 text-wrap"
+                              >Responsive Design</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <!-- SEO item -->
+                  <li class="px-4 py-1 lg:w-64">
+                    <a
+                      class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-100 text-cyan-900 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                      href="javascript:void(0)"
+                      onclick="toggleSubmenu('seo-dropdown')"
+                    >
+                      <span class="leading-5 text-wrap">SEO</span>
+                      <i class="block size-3 duration-500"></i>
+                    </a>
+
+                    <!-- Nested dropdown (SEO) -->
+                    <div class="hidden" id="seo-dropdown">
+                      <ul class="my-2">
+                        <li>
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-300 text-pink-800 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="/services/seo"
+                          >
+                            <span class="leading-5 text-wrap">On-Page SEO</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="flex gap-2 py-4 rounded-lg px-3 font-medium text-base capitalize w-full justify-between items-center bg-pink-300 text-pink-800 border border-solid border-slate-100 hover:bg-slate-100 hover:text-primary hover:fill-primary hover:tracking-wide duration-500"
+                            href="/services/seo"
+                          >
+                            <span class="leading-5 text-wrap"
+                              >Off-Page SEO</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- About item -->
+              <li class="relative text-gray-200">
+                <a class="flex items-center justify-center" href="/about"
+                  >About</a
+                >
+              </li>
+
+              <!-- Contact item -->
+              <li class="relative text-gray-200">
+                <a class="flex items-center justify-center" href="/contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -1838,5 +2067,6 @@
         </div>
       </div>
     </footer>
+    <script src="./src/script/script.js"></script>
   </body>
 </html>

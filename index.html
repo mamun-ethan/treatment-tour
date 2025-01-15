@@ -2365,32 +2365,7 @@
       });
       glide01.mount();
     </script>
-    <!-- JavaScript to handle dropdown toggle -->
-    <script>
-      document.getElementById("menu-btn").addEventListener("click", () => {
-        const mobileMenu = document.getElementById("mobile-menu");
-        mobileMenu.classList.toggle("hidden");
-      });
 
-      function toggleSubmenu(id) {
-        const submenu = document.getElementById(id);
-        submenu.classList.toggle("hidden");
-      }
-
-      // Optionally, to close a previously opened submenu when clicking another item
-      document.addEventListener("click", function (event) {
-        const target = event.target;
-        const submenu = document.querySelectorAll(".hidden");
-
-        submenu.forEach((item) => {
-          if (
-            !target.closest("#" + item.id) &&
-            item.classList.contains("hidden") === false
-          ) {
-            item.classList.add("hidden");
-          }
-        });
-      });
-    </script>
+    <script src="./src/script/script.js"></script>
   </body>
 </html>
