@@ -1759,12 +1759,10 @@
           >
             our podcast
           </h1>
-          <div class="grid grid-cols-2 my-5 md:grid-cols-3 gap-5">
-            <div>
+          <div class="grid grid-cols-1 my-5 md:grid-cols-3 gap-5">
+            <div class="mx-auto">
               <iframe
                 class="rounded-md shadow-lg"
-                width="400"
-                height="315"
                 src="https://www.youtube.com/embed/v4H2fTgHGuc?si=eVLqA0G22MitizXb"
                 title="YouTube video player"
                 frameborder="0"
@@ -1773,11 +1771,9 @@
                 allowfullscreen
               ></iframe>
             </div>
-            <div>
+            <div class="mx-auto">
               <iframe
                 class="rounded-md shadow-lg"
-                width="400"
-                height="315"
                 src="https://www.youtube.com/embed/v4H2fTgHGuc?si=eVLqA0G22MitizXb"
                 title="YouTube video player"
                 frameborder="0"
@@ -1786,11 +1782,9 @@
                 allowfullscreen
               ></iframe>
             </div>
-            <div>
+            <div class="mx-auto">
               <iframe
                 class="rounded-md shadow-lg"
-                width="400"
-                height="315"
                 src="https://www.youtube.com/embed/v4H2fTgHGuc?si=eVLqA0G22MitizXb"
                 title="YouTube video player"
                 frameborder="0"
@@ -1812,7 +1806,9 @@
             see our latest news and events
           </h1>
           <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
-            <div class="p-3 cursor-pointer rounded-md shadow-md">
+            <div
+              class="p-3 flex flex-col justify-center items-center cursor-pointer rounded-md shadow-md"
+            >
               <img src="./src/assets/images/blog.png" alt="" />
               <a href="#" class="text-cyan-900 font-medium capitalize"
                 >Expanding Global Access to IVF: A Collaborative Effort by
@@ -2189,284 +2185,286 @@
         </div>
       </div>
       <!-- review -->
-      <div class="container mx-auto px-5">
-        <div class="py-6 w-full">
-          <div class="w-full flex flex-col items-center justify-center">
-            <h1
-              class="mb-1 lg:mb-3 text-2xl lg:text-2xl xl:text-3xl font-semibold text-center"
-            >
-              Our Social Services About<span
-                class="px-1 text-pink-700 font-bold"
-                >Treatment Tour</span
+      <div class="my-5 md:md-16">
+        <div class="container mx-auto px-5">
+          <div class="py-6 w-full">
+            <div class="w-full flex flex-col items-center justify-center">
+              <h1
+                class="mb-1 lg:mb-3 text-2xl lg:text-2xl xl:text-3xl font-semibold text-center"
               >
-            </h1>
-            <div
-              class="max-w-4xl text-gray-500 text-center text-sm lg:text-lg leading-4 lg:leading-5 font-suse"
-            >
-              From business cards to banners, HelloPrint offers a wide range of
-              online printing &amp;amp; personalized print products to enhance
-              your brand and marketing efforts, catering to all your
-              professional and personal printing needs.
+                Our Social Services About<span
+                  class="px-1 text-pink-700 font-bold"
+                  >Treatment Tour</span
+                >
+              </h1>
+              <div
+                class="max-w-4xl text-gray-500 text-center text-sm lg:text-lg leading-4 lg:leading-5 font-suse"
+              >
+                From business cards to banners, HelloPrint offers a wide range
+                of online printing &amp;amp; personalized print products to
+                enhance your brand and marketing efforts, catering to all your
+                professional and personal printing needs.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="flex justify-between items-center gap-5">
-          <a
-            class="block w-full bg-pink-100 shadow-md rounded-md"
-            href="/clinic/4"
-            ><figure
-              class="before:content-[''] before:pt-[65%] before:block relative overflow-hidden group"
-            >
-              <img
-                class="rounded-t-xl duration-500 hover:scale-105 object-cover"
-                src="./src/assets/images/Metro-Hospital-Noida.jpg"
-                style="
-                  position: absolute;
-                  height: 100%;
-                  width: 100%;
-                  inset: 0px;
-                  color: transparent;
-                "
-              />
-              <p
-                class="-rotate-45 top-6 -left-9 z-10 absolute py-0.5 px-9 bg-green-500 text-slate-100 font-medium uppercase"
+          <div class="grid grid-cols-1 md:grid-cols-3 md:my-8 gap-5">
+            <a
+              class="block w-full bg-pink-100 shadow-md rounded-md"
+              href="/clinic/4"
+              ><figure
+                class="before:content-[''] before:pt-[65%] before:block relative overflow-hidden group"
               >
-                PREMIUM
-              </p>
-              <ul
-                class="absolute right-0 flex top-0 opacity-0 duration-500 group-hover:opacity-100"
-              >
-                <li class="py-2">
-                  <button
-                    class="size-9 p-2 text-primary fill-primary bg-white rounded-xl shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] hover:bg-primary hover:fill-white duration-500"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 576 512"
-                    >
-                      <path
-                        d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48l45.5 0c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5L488 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-288.3 0c-11.5 0-21.4-8.2-23.6-19.5L170.7 288l288.5 0c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32L360 32l0 102.1 23-23c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-64 64c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l23 23L312 32 120.1 32C111 12.8 91.6 0 69.5 0L24 0zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
-                      ></path>
-                    </svg>
-                  </button>
-                </li>
-                <li class="p-2">
-                  <button
-                    class="size-9 p-2 text-green-500 fill-green-500 bg-white rounded-xl shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] hover:bg-green-500 hover:fill-white duration-500"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 576 512"
-                    >
-                      <path
-                        d="M163.9 136.9c-29.4-29.8-29.4-78.2 0-108s77-29.8 106.4 0l17.7 18 17.7-18c29.4-29.8 77-29.8 106.4 0s29.4 78.2 0 108L310.5 240.1c-6.2 6.3-14.3 9.4-22.5 9.4s-16.3-3.1-22.5-9.4L163.9 136.9zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5L192 512 32 512c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l36.8 0 44.9-36c22.7-18.2 50.9-28 80-28l78.3 0 16 0 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l120.6 0 119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384c0 0 0 0 0 0l-.9 0c.3 0 .6 0 .9 0z"
-                      ></path>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </figure>
-            <div class="p-4">
-              <div class="flex w-full justify-between items-start gap-1">
-                <h2
-                  class="break-all font-bold text-lg text-slate-900 hover:underline hover:text-primary duration-500"
+                <img
+                  class="rounded-t-xl duration-500 hover:scale-105 object-cover"
+                  src="./src/assets/images/Metro-Hospital-Noida.jpg"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    inset: 0px;
+                    color: transparent;
+                  "
+                />
+                <p
+                  class="-rotate-45 top-6 -left-9 z-10 absolute py-0.5 px-9 bg-green-500 text-slate-100 font-medium uppercase"
                 >
-                  Clinic
-                </h2>
-                <ul class="flex gap-0.5 justify-end">
-                  <li class="text-orange-300">
-                    <i class="fa-solid fa-star"></i>
+                  PREMIUM
+                </p>
+                <ul
+                  class="absolute right-0 flex top-0 opacity-0 duration-500 group-hover:opacity-100"
+                >
+                  <li class="py-2">
+                    <button
+                      class="size-9 p-2 text-primary fill-primary bg-white rounded-xl shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] hover:bg-primary hover:fill-white duration-500"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48l45.5 0c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5L488 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-288.3 0c-11.5 0-21.4-8.2-23.6-19.5L170.7 288l288.5 0c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32L360 32l0 102.1 23-23c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-64 64c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l23 23L312 32 120.1 32C111 12.8 91.6 0 69.5 0L24 0zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
+                        ></path>
+                      </svg>
+                    </button>
                   </li>
-                  <li class="text-orange-300">
-                    <i class="fa-solid fa-star"></i>
-                  </li>
-                  <li class="text-orange-300">
-                    <i class="fa-solid fa-star"></i>
-                  </li>
-                  <li class="text-orange-300">
-                    <i class="fa-solid fa-star"></i>
-                  </li>
-                  <li class="text-orange-300">
-                    <i class="fa-regular fa-star"></i>
+                  <li class="p-2">
+                    <button
+                      class="size-9 p-2 text-green-500 fill-green-500 bg-white rounded-xl shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] hover:bg-green-500 hover:fill-white duration-500"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          d="M163.9 136.9c-29.4-29.8-29.4-78.2 0-108s77-29.8 106.4 0l17.7 18 17.7-18c29.4-29.8 77-29.8 106.4 0s29.4 78.2 0 108L310.5 240.1c-6.2 6.3-14.3 9.4-22.5 9.4s-16.3-3.1-22.5-9.4L163.9 136.9zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5L192 512 32 512c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l36.8 0 44.9-36c22.7-18.2 50.9-28 80-28l78.3 0 16 0 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l120.6 0 119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384c0 0 0 0 0 0l-.9 0c.3 0 .6 0 .9 0z"
+                        ></path>
+                      </svg>
+                    </button>
                   </li>
                 </ul>
-              </div>
-              <h4 class="w-full">dfdf</h4>
-            </div></a
-          >
-          <a
-            class="block w-full bg-pink-100 shadow-md rounded-md"
-            href="/clinic/4"
-            ><figure
-              class="before:content-[''] before:pt-[65%] before:block relative overflow-hidden group"
+              </figure>
+              <div class="p-4">
+                <div class="flex w-full justify-between items-start gap-1">
+                  <h2
+                    class="break-all font-bold text-lg text-slate-900 hover:underline hover:text-primary duration-500"
+                  >
+                    Clinic
+                  </h2>
+                  <ul class="flex gap-0.5 justify-end">
+                    <li class="text-orange-300">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="text-orange-300">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="text-orange-300">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="text-orange-300">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="text-orange-300">
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                  </ul>
+                </div>
+                <h4 class="w-full">dfdf</h4>
+              </div></a
             >
-              <img
-                class="rounded-t-xl duration-500 hover:scale-105 object-cover"
-                src="./src/assets/images/Metro-Hospital-Noida.jpg"
-                style="
-                  position: absolute;
-                  height: 100%;
-                  width: 100%;
-                  inset: 0px;
-                  color: transparent;
-                "
-              />
-              <p
-                class="-rotate-45 top-6 -left-9 z-10 absolute py-0.5 px-9 bg-green-500 text-slate-100 font-medium uppercase"
+            <a
+              class="block w-full bg-pink-100 shadow-md rounded-md"
+              href="/clinic/4"
+              ><figure
+                class="before:content-[''] before:pt-[65%] before:block relative overflow-hidden group"
               >
-                PREMIUM
-              </p>
-              <ul
-                class="absolute right-0 flex top-0 opacity-0 duration-500 group-hover:opacity-100"
-              >
-                <li class="py-2">
-                  <button
-                    class="size-9 p-2 text-primary fill-primary bg-white rounded-xl shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] hover:bg-primary hover:fill-white duration-500"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 576 512"
-                    >
-                      <path
-                        d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48l45.5 0c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5L488 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-288.3 0c-11.5 0-21.4-8.2-23.6-19.5L170.7 288l288.5 0c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32L360 32l0 102.1 23-23c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-64 64c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l23 23L312 32 120.1 32C111 12.8 91.6 0 69.5 0L24 0zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
-                      ></path>
-                    </svg>
-                  </button>
-                </li>
-                <li class="p-2">
-                  <button
-                    class="size-9 p-2 text-green-500 fill-green-500 bg-white rounded-xl shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] hover:bg-green-500 hover:fill-white duration-500"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 576 512"
-                    >
-                      <path
-                        d="M163.9 136.9c-29.4-29.8-29.4-78.2 0-108s77-29.8 106.4 0l17.7 18 17.7-18c29.4-29.8 77-29.8 106.4 0s29.4 78.2 0 108L310.5 240.1c-6.2 6.3-14.3 9.4-22.5 9.4s-16.3-3.1-22.5-9.4L163.9 136.9zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5L192 512 32 512c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l36.8 0 44.9-36c22.7-18.2 50.9-28 80-28l78.3 0 16 0 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l120.6 0 119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384c0 0 0 0 0 0l-.9 0c.3 0 .6 0 .9 0z"
-                      ></path>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </figure>
-            <div class="p-4">
-              <div class="flex w-full justify-between items-start gap-1">
-                <h2
-                  class="break-all font-bold text-lg text-slate-900 hover:underline hover:text-primary duration-500"
+                <img
+                  class="rounded-t-xl duration-500 hover:scale-105 object-cover"
+                  src="./src/assets/images/Metro-Hospital-Noida.jpg"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    inset: 0px;
+                    color: transparent;
+                  "
+                />
+                <p
+                  class="-rotate-45 top-6 -left-9 z-10 absolute py-0.5 px-9 bg-green-500 text-slate-100 font-medium uppercase"
                 >
-                  Clinic
-                </h2>
-                <ul class="flex gap-0.5 justify-end">
-                  <li class="text-orange-300">
-                    <i class="fa-solid fa-star"></i>
+                  PREMIUM
+                </p>
+                <ul
+                  class="absolute right-0 flex top-0 opacity-0 duration-500 group-hover:opacity-100"
+                >
+                  <li class="py-2">
+                    <button
+                      class="size-9 p-2 text-primary fill-primary bg-white rounded-xl shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] hover:bg-primary hover:fill-white duration-500"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48l45.5 0c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5L488 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-288.3 0c-11.5 0-21.4-8.2-23.6-19.5L170.7 288l288.5 0c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32L360 32l0 102.1 23-23c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-64 64c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l23 23L312 32 120.1 32C111 12.8 91.6 0 69.5 0L24 0zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
+                        ></path>
+                      </svg>
+                    </button>
                   </li>
-                  <li class="text-orange-300">
-                    <i class="fa-solid fa-star"></i>
-                  </li>
-                  <li class="text-orange-300">
-                    <i class="fa-solid fa-star"></i>
-                  </li>
-                  <li class="text-orange-300">
-                    <i class="fa-solid fa-star"></i>
-                  </li>
-                  <li class="text-orange-300">
-                    <i class="fa-regular fa-star"></i>
+                  <li class="p-2">
+                    <button
+                      class="size-9 p-2 text-green-500 fill-green-500 bg-white rounded-xl shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] hover:bg-green-500 hover:fill-white duration-500"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          d="M163.9 136.9c-29.4-29.8-29.4-78.2 0-108s77-29.8 106.4 0l17.7 18 17.7-18c29.4-29.8 77-29.8 106.4 0s29.4 78.2 0 108L310.5 240.1c-6.2 6.3-14.3 9.4-22.5 9.4s-16.3-3.1-22.5-9.4L163.9 136.9zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5L192 512 32 512c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l36.8 0 44.9-36c22.7-18.2 50.9-28 80-28l78.3 0 16 0 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l120.6 0 119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384c0 0 0 0 0 0l-.9 0c.3 0 .6 0 .9 0z"
+                        ></path>
+                      </svg>
+                    </button>
                   </li>
                 </ul>
-              </div>
-              <h4 class="w-full">dfdf</h4>
-            </div></a
-          >
-          <a
-            class="block w-full bg-pink-100 shadow-md rounded-md"
-            href="/clinic/4"
-            ><figure
-              class="before:content-[''] before:pt-[65%] before:block relative overflow-hidden group"
+              </figure>
+              <div class="p-4">
+                <div class="flex w-full justify-between items-start gap-1">
+                  <h2
+                    class="break-all font-bold text-lg text-slate-900 hover:underline hover:text-primary duration-500"
+                  >
+                    Clinic
+                  </h2>
+                  <ul class="flex gap-0.5 justify-end">
+                    <li class="text-orange-300">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="text-orange-300">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="text-orange-300">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="text-orange-300">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="text-orange-300">
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                  </ul>
+                </div>
+                <h4 class="w-full">dfdf</h4>
+              </div></a
             >
-              <img
-                class="rounded-t-xl duration-500 hover:scale-105 object-cover"
-                src="./src/assets/images/Metro-Hospital-Noida.jpg"
-                style="
-                  position: absolute;
-                  height: 100%;
-                  width: 100%;
-                  inset: 0px;
-                  color: transparent;
-                "
-              />
-              <p
-                class="-rotate-45 top-6 -left-9 z-10 absolute py-0.5 px-9 bg-green-500 text-slate-100 font-medium uppercase"
+            <a
+              class="block w-full bg-pink-100 shadow-md rounded-md"
+              href="/clinic/4"
+              ><figure
+                class="before:content-[''] before:pt-[65%] before:block relative overflow-hidden group"
               >
-                PREMIUM
-              </p>
-              <ul
-                class="absolute right-0 flex top-0 opacity-0 duration-500 group-hover:opacity-100"
-              >
-                <li class="py-2">
-                  <button
-                    class="size-9 p-2 text-primary fill-primary bg-white rounded-xl shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] hover:bg-primary hover:fill-white duration-500"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 576 512"
-                    >
-                      <path
-                        d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48l45.5 0c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5L488 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-288.3 0c-11.5 0-21.4-8.2-23.6-19.5L170.7 288l288.5 0c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32L360 32l0 102.1 23-23c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-64 64c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l23 23L312 32 120.1 32C111 12.8 91.6 0 69.5 0L24 0zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
-                      ></path>
-                    </svg>
-                  </button>
-                </li>
-                <li class="p-2">
-                  <button
-                    class="size-9 p-2 text-green-500 fill-green-500 bg-white rounded-xl shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] hover:bg-green-500 hover:fill-white duration-500"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 576 512"
-                    >
-                      <path
-                        d="M163.9 136.9c-29.4-29.8-29.4-78.2 0-108s77-29.8 106.4 0l17.7 18 17.7-18c29.4-29.8 77-29.8 106.4 0s29.4 78.2 0 108L310.5 240.1c-6.2 6.3-14.3 9.4-22.5 9.4s-16.3-3.1-22.5-9.4L163.9 136.9zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5L192 512 32 512c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l36.8 0 44.9-36c22.7-18.2 50.9-28 80-28l78.3 0 16 0 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l120.6 0 119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384c0 0 0 0 0 0l-.9 0c.3 0 .6 0 .9 0z"
-                      ></path>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </figure>
-            <div class="p-4">
-              <div class="flex w-full justify-between items-start gap-1">
-                <h2
-                  class="break-all font-bold text-lg text-slate-900 hover:underline hover:text-primary duration-500"
+                <img
+                  class="rounded-t-xl duration-500 hover:scale-105 object-cover"
+                  src="./src/assets/images/Metro-Hospital-Noida.jpg"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    inset: 0px;
+                    color: transparent;
+                  "
+                />
+                <p
+                  class="-rotate-45 top-6 -left-9 z-10 absolute py-0.5 px-9 bg-green-500 text-slate-100 font-medium uppercase"
                 >
-                  Clinic
-                </h2>
-                <ul class="flex gap-0.5 justify-end">
-                  <li class="text-orange-300">
-                    <i class="fa-solid fa-star"></i>
+                  PREMIUM
+                </p>
+                <ul
+                  class="absolute right-0 flex top-0 opacity-0 duration-500 group-hover:opacity-100"
+                >
+                  <li class="py-2">
+                    <button
+                      class="size-9 p-2 text-primary fill-primary bg-white rounded-xl shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] hover:bg-primary hover:fill-white duration-500"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48l45.5 0c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5L488 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-288.3 0c-11.5 0-21.4-8.2-23.6-19.5L170.7 288l288.5 0c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32L360 32l0 102.1 23-23c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-64 64c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l23 23L312 32 120.1 32C111 12.8 91.6 0 69.5 0L24 0zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
+                        ></path>
+                      </svg>
+                    </button>
                   </li>
-                  <li class="text-orange-300">
-                    <i class="fa-solid fa-star"></i>
-                  </li>
-                  <li class="text-orange-300">
-                    <i class="fa-solid fa-star"></i>
-                  </li>
-                  <li class="text-orange-300">
-                    <i class="fa-solid fa-star"></i>
-                  </li>
-                  <li class="text-orange-300">
-                    <i class="fa-regular fa-star"></i>
+                  <li class="p-2">
+                    <button
+                      class="size-9 p-2 text-green-500 fill-green-500 bg-white rounded-xl shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] hover:bg-green-500 hover:fill-white duration-500"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          d="M163.9 136.9c-29.4-29.8-29.4-78.2 0-108s77-29.8 106.4 0l17.7 18 17.7-18c29.4-29.8 77-29.8 106.4 0s29.4 78.2 0 108L310.5 240.1c-6.2 6.3-14.3 9.4-22.5 9.4s-16.3-3.1-22.5-9.4L163.9 136.9zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5L192 512 32 512c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l36.8 0 44.9-36c22.7-18.2 50.9-28 80-28l78.3 0 16 0 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l120.6 0 119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384c0 0 0 0 0 0l-.9 0c.3 0 .6 0 .9 0z"
+                        ></path>
+                      </svg>
+                    </button>
                   </li>
                 </ul>
-              </div>
-              <h4 class="w-full">dfdf</h4>
-            </div></a
-          >
+              </figure>
+              <div class="p-4">
+                <div class="flex w-full justify-between items-start gap-1">
+                  <h2
+                    class="break-all font-bold text-lg text-slate-900 hover:underline hover:text-primary duration-500"
+                  >
+                    Clinic
+                  </h2>
+                  <ul class="flex gap-0.5 justify-end">
+                    <li class="text-orange-300">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="text-orange-300">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="text-orange-300">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="text-orange-300">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="text-orange-300">
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                  </ul>
+                </div>
+                <h4 class="w-full">dfdf</h4>
+              </div></a
+            >
+          </div>
         </div>
       </div>
 
       <!-- service -->
-      <div>
+      <div class="my-5 md:my-16">
         <div class="container mx-auto px-5 pb-5 lg:py-10">
-          <div class="w-full flex flex-col items-center justify-center">
+          <div class="w-full flex flex-col gap-5 items-center justify-center">
             <h1
               class="mb-1 lg:mb-3 text-2xl lg:text-2xl xl:text-3xl font-semibold text-center"
             >
@@ -2483,9 +2481,9 @@
               professional and personal printing needs.
             </div>
           </div>
-          <div class="flex flex-wrap w-full gap-6 py-10 justify-center">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-2 my-8">
             <div
-              class="w-full lg:w-[48%] xl:w-[31%] p-6 border border-solid border-slate-300 bg-white relative rounded-xl"
+              class="w-full p-6 border border-solid border-slate-300 bg-white relative rounded-xl"
             >
               <div>
                 <h2 class="text-xl text-pink-800 font-semibold">
@@ -2513,7 +2511,7 @@
               </div>
             </div>
             <div
-              class="w-full lg:w-[48%] xl:w-[31%] p-6 border border-solid border-slate-300 bg-white relative rounded-xl"
+              class="w-full p-6 border border-solid border-slate-300 bg-white relative rounded-xl"
             >
               <div>
                 <h2 class="text-xl font-semibold text-pink-800">
@@ -2541,7 +2539,7 @@
               </div>
             </div>
             <div
-              class="w-full lg:w-[48%] xl:w-[31%] p-6 border border-solid border-slate-300 bg-white relative rounded-xl"
+              class="w-full p-6 border border-solid border-slate-300 bg-white relative rounded-xl"
             >
               <div>
                 <h2 class="text-xl font-semibold text-pink-800">

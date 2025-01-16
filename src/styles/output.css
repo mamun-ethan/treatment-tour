@@ -2116,6 +2116,11 @@ video {
     margin-bottom: 5rem;
   }
 
+  .md\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .md\:mt-\[2rem\] {
     margin-top: 2rem;
   }
