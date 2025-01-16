@@ -13,6 +13,7 @@ View the live project here:
 - [Treatments](https://mamun-ethan.github.io/treatment-tour/treatments.html)
 - [Appointment](https://mamun-ethan.github.io/treatment-tour/appointment.html)
 - [Facility](https://mamun-ethan.github.io/treatment-tour/facility.html)
+- [Clinics](https://mamun-ethan.github.io/treatment-tour/clinics.html)
 
 ## ✨ Features
 
