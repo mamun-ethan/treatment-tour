@@ -2004,7 +2004,6 @@
           </div>
         </div>
       </div>
-
       <!-- events and news -->
       <div class="my-15">
         <div class="container mx-auto px-5">
@@ -2013,53 +2012,33 @@
           >
             see our latest news and events
           </h1>
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
-            <div
-              class="p-3 flex flex-col justify-center items-center cursor-pointer rounded-md shadow-md"
-            >
-              <img src="./src/assets/images/blog.png" alt="" />
-              <a href="#" class="text-cyan-900 font-medium capitalize"
-                >Expanding Global Access to IVF: A Collaborative Effort by
-                Medsurge India and Nova IVF</a
-              >
-            </div>
-            <div class="p-3 cursor-pointer rounded-md shadow-md">
-              <img src="./src/assets/images/blog.png" alt="" />
-              <a href="#" class="text-cyan-900 font-medium capitalize"
-                >Expanding Global Access to IVF: A Collaborative Effort by
-                Medsurge India and Nova IVF</a
-              >
-            </div>
-            <div class="p-3 cursor-pointer rounded-md shadow-md">
-              <img src="./src/assets/images/blog.png" alt="" />
-              <a href="#" class="text-cyan-900 font-medium capitalize"
-                >Expanding Global Access to IVF: A Collaborative Effort by
-                Medsurge India and Nova IVF</a
-              >
-            </div>
-            <div class="p-3 cursor-pointer rounded-md shadow-md">
-              <img src="./src/assets/images/blog.png" alt="" />
-              <a href="#" class="text-cyan-900 font-medium capitalize"
-                >Expanding Global Access to IVF: A Collaborative Effort by
-                Medsurge India and Nova IVF</a
-              >
-            </div>
-          </div>
-          <!-- navigration -->
+
+          <!-- event items -->
+          <div class="grid event-wrap grid-cols-1 md:grid-cols-4 gap-5"></div>
+
+          <!-- pagination -->
           <div class="flex my-8 justify-center items-center">
             <ul class="flex gap-2 text-xs items-center">
-              <li class="text-pink-800"><i class="fa-solid fa-circle"></i></li>
-              <li class="text-gray-500"><i class="fa-solid fa-circle"></i></li>
-              <li class="text-gray-500"><i class="fa-solid fa-circle"></i></li>
+              <li class="text-pink-800 pagination" data-page="1">
+                <i class="fa-solid fa-circle"></i>
+              </li>
+              <li class="text-gray-500 pagination" data-page="2">
+                <i class="fa-solid fa-circle"></i>
+              </li>
+              <li class="text-gray-500 pagination" data-page="3">
+                <i class="fa-solid fa-circle"></i>
+              </li>
             </ul>
           </div>
-          <!-- view all news and events button -->
+
+          <!-- view all button -->
           <div class="flex justify-center items-center">
             <a
               class="px-4 py-3 rounded-md shadow-md bg-pink-800 text-white font-semibold hover:text-gray-500 capitalize text-base"
               href="#"
-              >view all news and events</a
             >
+              view all news and events
+            </a>
           </div>
         </div>
       </div>
@@ -3156,6 +3135,86 @@
 
       leftBtn.addEventListener("click", () => {
         scrollContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      });
+    </script>
+
+    <script>
+      const eventsData = [
+        {
+          img: "./src/assets/images/blog.png",
+          text: "Expanding Global Access to IVF: A Collaborative Effort by Medsurge India and Nova IVF",
+        },
+        {
+          img: "./src/assets/images/blog.png",
+          text: "Revolutionizing Fertility Treatment: The Future of IVF in Rural Areas",
+        },
+        {
+          img: "./src/assets/images/blog.png",
+          text: "A Global Partnership to Advance IVF Technology and Accessibility",
+        },
+        {
+          img: "./src/assets/images/blog.png",
+          text: "Enhancing Fertility Care for All: New Policies in Focus",
+        },
+        {
+          img: "./src/assets/images/blog.png",
+          text: "2025 IVF Summit Highlights Global Innovations and Challenges",
+        },
+        {
+          img: "./src/assets/images/blog.png",
+          text: "Nova IVF's Expansion into Africa: A Game Changer for Fertility Services",
+        },
+        {
+          img: "./src/assets/images/blog.png",
+          text: "Affordable IVF Treatments: Government and Private Sector Join Hands",
+        },
+        {
+          img: "./src/assets/images/blog.png",
+          text: "Medsurge India Launches IVF Awareness Campaign Across India",
+        },
+        {
+          img: "./src/assets/images/blog.png",
+          text: "New IVF Technologies Make Headlines in 2025",
+        },
+      ];
+
+      const eventsPerPage = 4;
+      const eventWrap = document.querySelector(".event-wrap");
+      const paginations = document.querySelectorAll(".pagination");
+
+      function renderEvents(page) {
+        eventWrap.innerHTML = "";
+        const start = (page - 1) * eventsPerPage;
+        const selectedEvents = eventsData.slice(start, start + eventsPerPage);
+
+        selectedEvents.forEach((event) => {
+          const eventDiv = document.createElement("div");
+          eventDiv.className =
+            "p-3 flex flex-col justify-center items-center cursor-pointer rounded-md shadow-md";
+          eventDiv.innerHTML = `
+        <img src="${event.img}" alt="" />
+        <a href="#" class="text-cyan-900 font-medium capitalize">${event.text}</a>
+      `;
+          eventWrap.appendChild(eventDiv);
+        });
+      }
+
+      // Initial render
+      renderEvents(1);
+
+      // Pagination click handling
+      paginations.forEach((pagination) => {
+        pagination.addEventListener("click", () => {
+          paginations.forEach((p) => {
+            p.classList.remove("text-pink-800");
+            p.classList.add("text-gray-500");
+          });
+          pagination.classList.add("text-pink-800");
+          pagination.classList.remove("text-gray-500");
+
+          const page = parseInt(pagination.getAttribute("data-page"));
+          renderEvents(page);
+        });
       });
     </script>
   </body>
